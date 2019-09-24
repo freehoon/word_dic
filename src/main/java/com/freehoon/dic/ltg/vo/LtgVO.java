@@ -4,10 +4,10 @@ import lombok.Data;
 
 @Data
 public class LtgVO {
-    String DATA_ID;
-    String ABBR;
-    String DATA_KO;
-    String DATA_EN;
-    String DATA_DESC;
-    String DATA_CLS;
+    String dataId;
+    String abbr;
+    String dataKr;
+    String dataEn;
+    String dataDesc;
+    String dataCls;
 }

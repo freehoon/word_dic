@@ -4,9 +4,9 @@ import lombok.Data;
 
 @Data
 public class AirVO {
-    String DataId;
-    String DataKo;
-    String DataEn;
-    String DataCn;
-    String DataDesc;
+    String dataId;
+    String dataKo;
+    String dataEn;
+    String dataCn;
+    String dataDesc;
 }
