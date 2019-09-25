@@ -1,6 +1,8 @@
 package com.freehoon.dic;
 
+import com.freehoon.dic.air.AirWordDic;
 import com.freehoon.dic.air.controller.AirController;
+import com.freehoon.dic.air.vo.AirVO;
 import com.freehoon.dic.goes.vo.GoesController;
 import com.freehoon.dic.goes.vo.GoesVO;
 import com.freehoon.dic.ltg.LtgWordDic;
@@ -28,11 +30,28 @@ public class DicMain {
         //NiklController nikl = new NiklController();
         //nikl.niklMain();
 
-        WordDic wd = new NiklWordDic();
-        wd.dic();
+        WordDic niklWordDic = new NiklWordDic();
+        niklWordDic.dic();
 
-        wd = new LtgWordDic();
-        wd.dic();
+        WordDic ltgWordDic = new LtgWordDic();
+        List<LtgVO> ltgList = new ArrayList<LtgVO>();
+        LtgVO ltgVO = new LtgVO();
+        ltgVO.setAbbr("1111");
+        ltgVO.setDataCls("1111");
+        ltgVO.setDataKr("1111");
+        ltgList.add(ltgVO);
+        ltgWordDic.insertWord(ltgList);
 
+        WordDic airWordDic = new AirWordDic<AirVO>();
+        List<AirVO> airList = new ArrayList<AirVO>();
+        AirVO airVO = new AirVO();
+        airVO.setDataCn("2222");
+        airVO.setDataKo("2222");
+        airVO.setDataDesc("2222");
+        airVO.setDataEn("2222");
+        airVO.setDataId("2222");
+        airList.add(airVO);
+
+        airWordDic.insertWord(airList);
     }
 }
