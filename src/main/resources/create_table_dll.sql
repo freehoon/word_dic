@@ -46,14 +46,37 @@ create table TB_LTG_WORD
     DATA_CLS  varchar(20) null comment '주제영역'
 );
 
-create table TB_LTG_WORD
+create table TB_NIKL_WORD
 (
-    DATA_ID   int auto_increment comment '데이터ID'
+    DATA_ID       int auto_increment comment '데이터ID'
         primary key,
-    ABBR      varchar(20) null comment '영어 약어명',
-    DATA_KR   varchar(20) null comment '한글명',
-    DATA_EN   varchar(20) null comment '영문명',
-    DATA_DESC text        null comment '용어정의',
-    DATA_CLS  varchar(20) null comment '주제영역'
+    DATA_NM       varchar(50)  null comment '데이터 명',
+    DATA_UNIT     varchar(20)  null comment '구성단위',
+    ORGN_YN       varchar(20)  null comment '고유어 여부',
+    ROMALPA       varchar(50)  null comment '로마자',
+    ROMALPA_WORD  varchar(50)  null comment '로마자 글자',
+    ROMALPA_SOUND varchar(50)  null comment '로마자 소리',
+    ORGN_WORD     varchar(100) null comment '원어',
+    ORGN_WORD2    varchar(100) null comment '어원',
+    DATA_SOUND    varchar(100) null comment '발음',
+    DATA_USE      varchar(100) null comment '활용',
+    SRCH_TYPE     varchar(20)  null comment '검색용 이형태',
+    DATA_PATSPH   varchar(100) null comment '품사',
+    MEAN_NO       varchar(20)  null comment '의미 번호',
+    DATA_MEAN     text         null comment '뜻 풀이',
+    DATA_REGION   varchar(200) null comment '방언지역',
+    DATA_FRM      varchar(200) null comment '문형',
+    DATA_RULE     text         null comment '문법',
+    DATA_EX       text         null comment '용례',
+    DATA_SPCLT    varchar(100) null comment '전문분야',
+    RELD_WORD     text         null comment '관련어휘',
+    PROVB         text         null comment '속담',
+    IDIOM         varchar(100) null comment '관용구',
+    TARGET_WORD   varchar(100) null comment '대역어',
+    CLS_INFO      text         null comment '생물 분류군 정보',
+    HIST_INFO     text         null comment '역사정보',
+    HNDY_INFO     text         null comment '수어정보',
+    EXCPT_INFO    text         null comment '규범정보',
+    MULTI_INFO    text         null comment '다중 매체 정보'
 );
 
