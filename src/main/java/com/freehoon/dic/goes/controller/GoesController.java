@@ -1,7 +1,8 @@
-package com.freehoon.dic.goes.vo;
+package com.freehoon.dic.goes.controller;
 
 import com.freehoon.dic.air.vo.AirVO;
 import com.freehoon.dic.dbConnect.DBConnect;
+import com.freehoon.dic.goes.vo.GoesVO;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;

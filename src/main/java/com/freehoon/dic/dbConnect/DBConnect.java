@@ -8,9 +8,12 @@ import java.util.List;
 
 public class DBConnect {
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/dbname?serverTimezone=UTC";
+//    static final String DB_URL = "jdbc:mysql://211.39.140.82:37818/wiseichat?serverTimezone=UTC";
+//    static final String USERNAME = "ichat";
+//    static final String PASSWORD = "Ichat1@#";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/wiseichat?serverTimezone=UTC";
     static final String USERNAME = "root";
-    static final String PASSWORD = "root";
+    static final String PASSWORD = "qwerqwer";
 
     private Connection conn = null;
     private Statement stmt = null;
