@@ -12,9 +12,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public class LtgController {
-    public void ltgMain(){
+    public void ltgMain(String fileName){
         try{
-            FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\ltg.xlsx");
+            FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\" + fileName);
             XSSFWorkbook workbook = new XSSFWorkbook(xlsxFile);
 
             XSSFSheet sheet = null;

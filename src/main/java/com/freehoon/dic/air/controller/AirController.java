@@ -16,9 +16,9 @@ import java.util.List;
 
 public class AirController {
 
-    public void airMain(){
+    public void airMain(String fileName){
         try{
-            FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\air.xlsx");
+            FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\" + fileName);
             XSSFWorkbook workbook = new XSSFWorkbook(xlsxFile);
 
             XSSFSheet sheet = null;

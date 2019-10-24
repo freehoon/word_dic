@@ -14,9 +14,9 @@ import java.util.List;
 
 public class GoesController {
 
-    public void goesMain(){
+    public void goesMain(String fileName){
         try{
-            FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\goes.xlsx");
+            FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\" + fileName);
             XSSFWorkbook workbook = new XSSFWorkbook(xlsxFile);
 
             XSSFSheet sheet = null;

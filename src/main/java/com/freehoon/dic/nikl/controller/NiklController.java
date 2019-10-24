@@ -18,9 +18,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public class NiklController {
-    public void niklMain(){
+    public void niklMain(String fileName){
         try{
-            POIFSFileSystem fileSystem = new POIFSFileSystem(new FileInputStream(new File("D:\\기상용어검색 관련 자료\\국립국어원 자료\\525777_1124223.xls")));
+            POIFSFileSystem fileSystem = new POIFSFileSystem(new FileInputStream(new File("D:\\기상용어검색 관련 자료\\" + fileName)));
             HSSFWorkbook workbook = new HSSFWorkbook(fileSystem);
             //FileInputStream xlsxFile = new FileInputStream("D:\\기상용어검색 관련 자료\\국립국어원 자료\\525777_50000.xls");
             //XSSFWorkbook workbook = new XSSFWorkbook(xlsxFile);
